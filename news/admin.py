@@ -5,7 +5,7 @@ from .models import News
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
     date_hierarchy = 'ceated_date'
-    list_display = ['title', 'content', 'active', 'ceated_date']
+    list_display = ['title', 'abstract', 'active', 'ceated_date']
     # fields = ['content']
     search_fields = ['title', 'content']
     ordering = ['-ceated_date']

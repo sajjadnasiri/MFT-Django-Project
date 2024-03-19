@@ -491,11 +491,11 @@
                         style="background-image: url({{ post.image.url }});">
                     </a>
                     <div class="text">
-                        <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
-                                    class="fa fa-calendar me-1"></i>{{ post.ceated_date|date}}</span> <span><a
-                                    href="#"><i class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                        <p class="meta"><span><i class="fa fa-user me-1"></i>{{ post.author.get_full_name }}</span> <span><i
+                                    class="fa fa-calendar me-1"></i>{{ post.ceated_date|date:"M Y" }}</span> <span><a
+                                    href="#"><i class="fa fa-comment me-1"></i>0 Comments</a></span></p>
                         <h3 class="heading mb-3"><a href="#">{{ post.title }}</a></h3>
-                        <p>{{ post.content }}</p>
+                        <p>{{ post.abstract }}</p>
                     </div>
                 </div>
             </div>
