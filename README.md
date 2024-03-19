@@ -1,3 +1,3 @@
 # First Django Project
-# MFT Main Branch
-# Python Learning Class
+<h2>MFT Main Branch</h2>
+<p>Python Learning Class</p>
